@@ -22,10 +22,11 @@
 					<input type="text" class="form-control" placeholder="Nom" required=""  name="nom" id="field1">
                     <input type="text" class="form-control" placeholder="prénom" required="" name="prenom" id="field2">
                     <input type="email" class="form-control" placeholder="adresse mail" required="" name="mail" id="field3">
+                    <br/>
                     <input type="password" class="form-control" placeholder="mot de passe" required="" name="pass" id="field4">
 
                        
-                    <input  class="btn-connect btn btn-warning" type="submit" value="Me connecter" /><br/>
+                    <input  class="btn-connect btn btn-warning" type="submit" value="S'inscrire" /><br/>
                  
                       </form>
 				</div>
