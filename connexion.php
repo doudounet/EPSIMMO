@@ -1,5 +1,5 @@
 <?php
-header('Location: menu.php');      
+header('Location: Admin/index.php');      
 
 
 ?>
