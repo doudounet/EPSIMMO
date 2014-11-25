@@ -24,9 +24,11 @@ overflow-x: hidden;
 h3#title{ color: #f0ad4e;
 text-align: center;}
 form {
+
 margin-top: 69%;
 width: 100%;
 padding: 30px;
+margin-bottom: -280px;
 }
 h3.error-login {
 position: absolute;
