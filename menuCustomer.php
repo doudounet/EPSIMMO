@@ -52,7 +52,7 @@ else{
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="index.html">
-                <p>JACA Admin</p>
+                <p>Menu Client</p>
             </a>
         </div>
         <ul class="nav navbar-nav pull-right hidden-xs">
@@ -84,30 +84,7 @@ else{
                     <i class="fa fa-home"></i>
                     <span>Accueil</span>
                 </a>
-            </li> 
-           <li>
-                <a href="gestion_order.html">
-                    <i class="fa fa-table"></i>
-                    <span>Gestion de commandes</span>
-                </a>
-            </li>
-             <li>
-                <a href="#">
-                    <i class="fa fa-table"></i>
-                    <span>Création de commandes</span>
-                </a>
-            </li> 
-            <li>
-                <a class="dropdown-toggle" href="#">
-                    <i class="fa fa-users"></i>
-                    <span>Users</span>
-                </a>
-                <ul class="submenu">
-                    <li><a href="user-list.html">User list</a></li>
-                    <li><a href="new-user.html">New user form</a></li>
-                    <li><a href="user-profile.html">User profile</a></li>
-                </ul>
-            </li>
+            </li>        
             <li>
                 <a href="logout.php">
                     <i class="fa fa-power-off"></i>
@@ -117,8 +94,6 @@ else{
         </ul>
     </div>
     <!-- end sidebar -->
-
-
 	<!-- main container -->
     <div class="content">
 
