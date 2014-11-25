@@ -53,13 +53,33 @@ else{
                         <input type="password" class="form-control" placeholder="Password" required="" name="pass" id="field2">
                        
                         <input  class="btn-connect btn btn-warning" type="submit" value="Me connecter" /><br/>
-                        <a href="#" id="password-forgert">Mot de passe perdu?</a>
+                        <a href="javascript:;" class="forget" data-toggle="modal" data-target=".forget-modal">Mot de passe oublié ? </a>
                       </form>
 				</div>
 
 			</div>
 		</div>
-
+				<div class="modal fade forget-modal" tabindex="-1" role="dialog" aria-labelledby="myForgetModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-sm">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">
+									<span aria-hidden="true">×</span>
+									<span class="sr-only">Close</span>
+								</button>
+								<h4 class="modal-title">Récupération du mot de passe</h4>
+							</div>
+							<div class="modal-body">
+								<p>Votre adresse mail : </p>
+								<input type="email" name="recovery-email" id="recovery-email" class="form-control" autocomplete="off">
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+								<button type="button" class="btn btn-custom">Soumettre</button>
+							</div>
+						</div> <!-- /.modal-content -->
+					</div> <!-- /.modal-dialog -->
+				</div> <!-- /.modal -->
 	</div>
 
 </body>
