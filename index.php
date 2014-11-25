@@ -12,8 +12,27 @@
 	<!-- Bootstrap core CSS -->
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> 
+	 <script type='text/javascript'>
+   function divaffiche(){ 
+	document.getElementById("demandepwd").style.display = "block"; 
+   	document.getElementById("pwdforgotten").style.display = "none"; 
+   	 
+   	} 
+   
+   function divhidden(){ 
+		document.getElementById("demandepwd").style.display = "none"; 
+		document.getElementById("pwdforgotten").style.display = "none"; 
+	   	 
+	   	} 
+  
+  </script>
 </head>
 <body>
+
+
+=
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6">
@@ -26,34 +45,33 @@
                         <input type="password" class="form-control" placeholder="Password" required="" name="pass" id="field2">
                        
                         <input  class="btn-connect btn btn-warning" type="submit" value="Me connecter" /><br/>
-                        <a href="javascript:;" class="forget" data-toggle="modal" data-target=".forget-modal">Mot de passe oublié ? </a>
+                       <button type="button" id="pwdforgotten" class="btn btn-info" onClick="divaffiche()" > Mot de passe oublié </button>
                       </form>
+					  
+					  
+					  <div id="demandepwd"  style="display:none;">
+				
+					<form class="form-horizontal"  name="resetPasswordForm" id="resetPasswordForm">
+						<div class="control-group">
+							<label class="control-label"> Login </label>
+								<div class="controls">
+									<span class="help-block">Renseignez votre mail afin de recevoir le mot de passe </span>
+									
+									<input type="text" name="email"/>
+									<button type="button" class="btn btn-info" onClick="divhidden()" > Valider </button>
+								</div>
+						</div>
+						</form>
 				</div>
-
+				</div>
+			
+				
 			</div>
 		</div>
-				<div class="modal fade forget-modal" tabindex="-1" role="dialog" aria-labelledby="myForgetModalLabel" aria-hidden="true">
-					<div class="modal-dialog modal-sm">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal">
-									<span aria-hidden="true">×</span>
-									<span class="sr-only">Close</span>
-								</button>
-								<h4 class="modal-title">Récupération du mot de passe</h4>
-							</div>
-							<div class="modal-body">
-								<p>Votre adresse mail : </p>
-								<input type="email" name="recovery-email" id="recovery-email" class="form-control" autocomplete="off">
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
-								<button type="button" class="btn btn-custom">Soumettre</button>
-							</div>
-						</div> <!-- /.modal-content -->
-					</div> <!-- /.modal-dialog -->
-				</div> <!-- /.modal -->
-	</div>
+		</div>
+			
+			
+				
 
 </body>
 </html>
