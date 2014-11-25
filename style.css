@@ -1,0 +1,54 @@
+body,html{
+	height: 100%;
+	width: 100%;
+	max-width: 360px;
+	background: url(img/home.jpg) center 0 no-repeat fixed;	
+	-webkit-background-size: cover; /* pour Chrome et Safari */
+    -moz-background-size: cover; /* pour Firefox */
+    -o-background-size: cover; /* pour Opera */
+    background-size: cover; /* version standardisée */
+}
+.login-panel{
+	background: #FFFFFF;
+position: fixed;
+right: 100px;
+float: right;
+height: 100%;
+width: 400px;
+margin: 0px;
+padding: 0px;
+z-index: 1;
+overflow-y: auto;
+overflow-x: hidden;
+}
+h3#title{ color: #f0ad4e;
+text-align: center;}
+form {
+margin-top: 69%;
+width: 100%;
+padding: 30px;
+}
+h3.error-login {
+position: absolute;
+top: 29%;
+left: 7%;
+font-size: 17px;
+color: red;
+}
+input#field1, input#field2 {
+margin-bottom: 30px;
+border-radius: 0;
+}
+input.btn-connect.btn.btn-warning {
+border-radius: 0;
+}
+input.btn-connect.btn.btn-warning:focus {
+	border: 1px solid #eea236;
+}
+
+@media screen and (max-width: 500px){
+	.row {min-width: 360px;}
+	.login-panel { right: 0; width: 100%; min-width: 360px;
+}
+	form {padding: 0px 74px;}
+}
