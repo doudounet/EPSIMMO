@@ -82,8 +82,7 @@ else{
                     <i class="fa fa-home"></i>
                     <span>Accueil</span>
                 </a>
-            </li> 
-                    
+            </li>        
             <li>
                 <a href="logout.php">
                     <i class="fa fa-power-off"></i>
@@ -93,8 +92,6 @@ else{
         </ul>
     </div>
     <!-- end sidebar -->
-
-
 	<!-- main container -->
     <div class="content">
 
