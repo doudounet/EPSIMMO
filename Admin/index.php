@@ -149,7 +149,7 @@
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                            <a href="../logout.php"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
                         </li>
                     </ul>
                 </li>
@@ -161,33 +161,10 @@
                         <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
+                        <a href="tables.php"><i class="fa fa-fw fa-table"></i> Tables</a>
                     </li>
                     <li>
-                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
-                    </li>
-                    <li>
-                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
-                    </li>
-                    <li>
-                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
-                    </li>
-                    <li>
-                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo" class="collapse">
-                            <li>
-                                <a href="#">Dropdown Item</a>
-                            </li>
-                            <li>
-                                <a href="#">Dropdown Item</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
+                        <a href="forms.php"><i class="fa fa-fw fa-edit"></i> Forms</a>
                     </li>
                 </ul>
             </div>
@@ -208,6 +185,9 @@
                             <li class="active">
                                 <i class="fa fa-dashboard"></i> Dashboard
                             </li>
+                           
+<p><button class="btn btn-warning btn-xs" data-title="create" data-toggle="modal" data-target="#create" data-placement="top" rel="tooltip">Ajouter une fiche client</button></p>
+                         
                         </ol>
                     </div>
                 </div>
@@ -219,7 +199,7 @@
 		
         
         <div class="col-md-12">
-        <h4>Bootstrap Snipp for Datatable</h4>
+        <h4></h4>
         <div class="table-responsive">
         
                 
@@ -228,11 +208,20 @@
                    <thead>
                    
                    <th><input type="checkbox" id="checkall" /></th>
-                   <th>First Name</th>
-                    <th>Last Name</th>
-                     <th>Address</th>
-                      <th>Edit</th>
-                       <th>Delete</th>
+                   <th>Nom</th>
+                   <th>Prénom</th>
+                   <th>date naissance</th>
+                   <th>Addresse</th>
+                   <th>mot de passe</th>
+                   <th>Email</th>
+                   <th>Tél</th>
+                   <th>CP</th>
+                   <th>Ville</th>
+
+                   
+
+                    <th>Edit</th>
+                    <th>Delete</th>
                    </thead>
     <tbody>
     
@@ -240,7 +229,13 @@
     <td><input type="checkbox" class="checkthis" /></td>
     <td>Mohsin</td>
     <td>Irshad</td>
-    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
+    <td>10/02/2014</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td><p><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-pencil"></span></button></p></td>
     <td><p><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-trash"></span></button></p></td>
     </tr>
@@ -249,7 +244,13 @@
     <td><input type="checkbox" class="checkthis" /></td>
     <td>Mohsin</td>
     <td>Irshad</td>
-    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
+    <td>11/02/2014</td>
+     <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td><p><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-pencil"></span></button></p></td>
     <td><p><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-trash"></span></button></p></td>
     </tr>
@@ -259,38 +260,17 @@
     <td><input type="checkbox" class="checkthis" /></td>
     <td>Mohsin</td>
     <td>Irshad</td>
-    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
+    <td>12/02/2014</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td><p><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-pencil"></span></button></p></td>
     <td><p><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-trash"></span></button></p></td>
     </tr>
-    
-    
-    
-        <tr>
-    <td><input type="checkbox" class="checkthis" /></td>
-    <td>Mohsin</td>
-    <td>Irshad</td>
-    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
-    <td><p><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-    <td><p><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-trash"></span></button></p></td>
-    </tr>
-    
-    
-    
-        <tr>
-    <td><input type="checkbox" class="checkthis" /></td>
-    <td>Mohsin</td>
-    <td>Irshad</td>
-    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
-    <td><p><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-    <td><p><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-trash"></span></button></p></td>
-    </tr>
-    
-    
    
-    
-   
-    
     </tbody>
         
 </table>
@@ -312,7 +292,51 @@
 	</div>
 </div>
 
-
+<div class="modal fade" id="create" tabindex="-1" role="dialog" aria-labelledby="create" aria-hidden="true">
+      <div class="modal-dialog">
+    <div class="modal-content">
+          <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title custom_align" id="Heading">Entrer les informations</h4>
+      </div>
+          <div class="modal-body">
+          <div class="form-group">
+        	<input class="form-control " type="text" placeholder="nom" name="nom">
+          </div>
+        <div class="form-group">
+        	<input class="form-control " type="text" placeholder="prenom" name="prenom">
+        </div>
+        <div class="form-group">
+    		<input class="form-control " type="date" placeholder="Date naissance" name="date">
+        </div>
+         <div class="form-group">
+    		<input class="form-control " type="text" placeholder="Adresse" name="adresse">
+        </div>
+        <div class="form-group">
+    		<input class="form-control " type="password" placeholder="mot de passe" name="pass">
+        </div>
+        <div class="form-group">
+    		<input class="form-control " type="email" placeholder="email" name="email">
+        </div>
+         <div class="form-group">
+    		<input class="form-control " type="tel" placeholder="tel" name="tel">
+        </div>
+        <div class="form-group">
+    		<input class="form-control " type="text" placeholder="cp" name="cp">
+        </div>
+         <div class="form-group">
+    		<input class="form-control " type="text" placeholder="ville" name="ville">
+        </div>
+      </div>
+          <div class="modal-footer ">
+        <button type="button" class="btn btn-warning btn-lg" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span>Créer</button>
+      </div>
+        </div>
+    <!-- /.modal-content --> 
+  </div>
+      <!-- /.modal-dialog --> 
+    </div>
+    
 <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
       <div class="modal-dialog">
     <div class="modal-content">
