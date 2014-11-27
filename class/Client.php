@@ -17,11 +17,10 @@ Class client {
 	public $idtype
 	public $mdp;
 	
-	public function (array $donnees)
+	public function test(array $donnees)
 	{
  
 	}
-
 	
 	public function id()
 	{
