@@ -23,26 +23,13 @@ CREATE DATABASE IF NOT EXISTS `epsimmo` DEFAULT CHARACTER SET latin1 COLLATE lat
 USE `epsimmo`;
 
 --
--- Contenu de la table `client`
---
-
-INSERT INTO `client` (`id`, `nom`, `prenom`, `datenaissance`, `idsecret`, `secret`, `email`, `tel`, `addresse`, `asup`, `cp`, `ville`, `idtype`, `mdp`) VALUES
-(1, 'Mantovani', 'Ludovic', '1990-04-08', 1, 'Tag', 'ludovic.mantov@gmail.com', '0671526211', '92 Allée George Sand', 'app 132', '59000', 'Lille', 1, 'coucou');
-
---
--- Contenu de la table `connexion`
---
-
-INSERT INTO `connexion` (`id`, `iduser`, `datecon`, `vernav`) VALUES
-(1, 1, '2014-11-25', 'Firefox');
-
---
 -- Contenu de la table `secret`
 --
 
 INSERT INTO `secret` (`id`, `intitule`) VALUES
 (1, 'Nom de ton premiers animal de compagnie'),
 (3, 'Nom de jeune fille de votre mère');
+
 
 --
 -- Contenu de la table `type`
@@ -51,6 +38,24 @@ INSERT INTO `secret` (`id`, `intitule`) VALUES
 INSERT INTO `type` (`id`, `intitule`) VALUES
 (1, 'admin'),
 (2, 'client');
+
+
+--
+-- Contenu de la table `client`
+--
+
+INSERT INTO `client` (`id`, `nom`, `prenom`, `datenaissance`, `idsecret`, `secret`, `email`, `tel`, `addresse`, `asup`, `cp`, `ville`, `idtype`, `mdp`) VALUES
+(1, 'Mantovani', 'Ludovic', '1990-04-08', 1, 'Tag', 'ludovic.mantov@gmail.com', '0671526211', '92 Allée George Sand', 'app 132', '59000', 'Lille', 1, 'coucou');
+
+
+--
+-- Contenu de la table `connexion`
+--
+
+INSERT INTO `connexion` (`id`, `iduser`, `datecon`, `vernav`) VALUES
+(1, 1, '2014-11-25', 'Firefox');
+
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
