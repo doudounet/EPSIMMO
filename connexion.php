@@ -1,5 +1,8 @@
 <?php
 //header('Location: Admin/index.php');      
+include ("class/UserManager.php");
+     
+$pdo = new PDO('mysql:host=cloud.mylittlestorage.fr;dbname=epsimmo', 'epsimmo', 'epsimmo');       
 
 
 

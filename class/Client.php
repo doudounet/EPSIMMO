@@ -1,5 +1,5 @@
 <?php
-
+include ("class/UserManager.php");
 Class client {
 
 	public $id;
