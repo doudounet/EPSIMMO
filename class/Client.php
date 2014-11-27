@@ -1,75 +1,148 @@
+<?php
+
 Class client {
 
 	public $id;
 	public $nom;
 	public $prenom;
-	public $dateNaiss;
+	public $datenaissance;
+	public $idsecret;
 	public $secret;
-	public $motDePasse;
 	public $email;
 	public $tel;
 	public $addresse;
 	public $asup;
 	public $cp;
 	public $ville;
+	public $idtype
+	public $mdp;
 	
-	public function client()
+	public function (array $donnees)
 	{
-	
-	}
-	
-	public function client($nom,$prenom,$motDePasse)
-	{
-		
+ 
 	}
 
-	public function getId ($email,$dateNaiss)
+	
+	public function id()
 	{
-		return $id;
+		return $this->id;
 	}
 	
-	public function getNom ($id)
+	public function nom()
 	{
-		
+		return $this->nom;
 	}
 	
-	public function getPrenom ($id)
+	public function prenom()
 	{
-		
+		return $this->prenom;
 	}
 	
-	public function getDateNaiss ($id)
+	public function datenaissance()
 	{
-		
+		return $this->datenaissance;
 	}
 	
-	public  function getSecret ($id)
+	public function idsecret()
 	{
-		
+		return $this->idsecret;
 	}
 	
-	public  function getMotDePasse($id)
+	public function secret()
 	{
-		
-	}	
-	
-	public  function getEmail ($id)
-	{
-		
+		return $this->secret;
 	}
 	
-	public  function getTel ($id)
+	public function email()
 	{
-		
+		return $this->email;
 	}
 	
-	public  function getAddresse ($id)
+	public function tel()
 	{
-		
+		return $this->tel;
 	}
 	
-	public  function getTel ($id)
+	public function addresse()
 	{
-		
+		return $this->addresse;
 	}
+	
+	public function asup()
+	{
+		return $this->asup;
+	}
+	
+	public function cp()
+	{
+		return $this->cp;
+	}
+	
+	public function ville()
+	{
+		return $this->ville;
+	}
+	
+	public function idtype()
+	{
+		return $this->type;
+	}
+	public function mdp()
+	{
+		return $this->mdp;
+	}
+	public function setid($id)
+	{
+		$this->id = $id;
+	}
+	public function setnom($nom)
+	{
+		$this->nom = $nom;
+	}
+	public function setprenom($prenom)
+	{
+		$this->prenom = $prenom;
+	}
+	public function setdatenaissance($datenaissance)
+	{
+		$this->datenaissance = $datenaissance;
+	}
+	public function setidsecret($idsecret)
+	{
+		$this->idsecret = $idsecret;
+	}
+	public function setemail($email)
+	{
+		$this->email = $email;
+	}
+	public function settel($tel)
+	{
+		$this->tel = $tel;
+	}
+	public function setaddresse($addresse)
+	{
+		$this->addresse = $addresse;
+	}
+	public function setasup($asup)
+	{
+		$this->asup = $asup;
+	}
+	public function setcp($cp)
+	{
+		$this->cp = $cp;
+	}
+    public function setville($ville)
+	{
+		$this->ville = $ville;
+	}
+	public function setidtype($idtype)
+	{
+		$this->idtype = $idtype;
+	}
+	public function setmdp($mdp)
+	{
+		$this->mdp = $mdp;
+	}
+	
 }
+?>
