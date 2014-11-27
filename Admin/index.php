@@ -56,93 +56,10 @@
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
-                    <ul class="dropdown-menu message-dropdown">
-                        <li class="message-preview">
-                            <a href="#">
-                                <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-                                    <div class="media-body">
-                                        <h5 class="media-heading"><strong>John Smith</strong>
-                                        </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="message-preview">
-                            <a href="#">
-                                <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-                                    <div class="media-body">
-                                        <h5 class="media-heading"><strong>John Smith</strong>
-                                        </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="message-preview">
-                            <a href="#">
-                                <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-                                    <div class="media-body">
-                                        <h5 class="media-heading"><strong>John Smith</strong>
-                                        </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="message-footer">
-                            <a href="#">Read All New Messages</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
-                    <ul class="dropdown-menu alert-dropdown">
-                        <li>
-                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">View All</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
@@ -162,9 +79,6 @@
                     </li>
                     <li>
                         <a href="tables.php"><i class="fa fa-fw fa-table"></i> Tables</a>
-                    </li>
-                    <li>
-                        <a href="forms.php"><i class="fa fa-fw fa-edit"></i> Forms</a>
                     </li>
                 </ul>
             </div>
@@ -211,15 +125,15 @@
                    <th>Nom</th>
                    <th>Prénom</th>
                    <th>date naissance</th>
-                   <th>Addresse</th>
-                   <th>mot de passe</th>
-                   <th>Email</th>
-                   <th>Tél</th>
+                   <th>email</th>
+                   <th>tel</th>
+                   <th>adresse</th>
+                   <th>asup</th>
                    <th>CP</th>
                    <th>Ville</th>
-
+                   <th>type</th>
+                   <th>Mot de passe</th>
                    
-
                     <th>Edit</th>
                     <th>Delete</th>
                    </thead>
@@ -230,6 +144,8 @@
     <td>Mohsin</td>
     <td>Irshad</td>
     <td>10/02/2014</td>
+    <td></td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -251,26 +167,13 @@
     <td></td>
     <td></td>
     <td></td>
-    <td><p><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-    <td><p><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-trash"></span></button></p></td>
-    </tr>
-    
-    
-        <tr>
-    <td><input type="checkbox" class="checkthis" /></td>
-    <td>Mohsin</td>
-    <td>Irshad</td>
-    <td>12/02/2014</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
     <td></td>
     <td></td>
     <td><p><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-pencil"></span></button></p></td>
     <td><p><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-trash"></span></button></p></td>
     </tr>
-   
+    
+  
     </tbody>
         
 </table>
@@ -307,29 +210,38 @@
         	<input class="form-control " type="text" placeholder="prenom" name="prenom">
         </div>
         <div class="form-group">
-    		<input class="form-control " type="date" placeholder="Date naissance" name="date">
+    		<input class="form-control " type="date" placeholder="Date naissance" name="dateNaissance">
         </div>
          <div class="form-group">
-    		<input class="form-control " type="text" placeholder="Adresse" name="adresse">
-        </div>
-        <div class="form-group">
-    		<input class="form-control " type="password" placeholder="mot de passe" name="pass">
-        </div>
-        <div class="form-group">
-    		<input class="form-control " type="email" placeholder="email" name="email">
+        <input class="form-control " type="email" placeholder="email" name="email">
         </div>
          <div class="form-group">
-    		<input class="form-control " type="tel" placeholder="tel" name="tel">
-        </div>
-        <div class="form-group">
-    		<input class="form-control " type="text" placeholder="cp" name="cp">
+        <input class="form-control " type="tel" placeholder="tel" name="tel">
         </div>
          <div class="form-group">
-    		<input class="form-control " type="text" placeholder="ville" name="ville">
+    		<input class="form-control " type="text" placeholder="Adresse" name="addresse">
         </div>
+        <div class="form-group">
+        <input class="form-control " type="text" placeholder="Adresse sup" name="asup">
+        </div>
+          <div class="form-group">
+        <input class="form-control " type="text" placeholder="cp" name="cp">
+        </div>
+          <div class="form-group">
+        <input class="form-control " type="text" placeholder="ville" name="ville">
+        </div>
+          <div class="form-group">
+        <input class="form-control " type="number" placeholder="type" name="type">
+        </div>
+        <div class="form-group">
+    		<input class="form-control " type="password" placeholder="mot de passe" name="mdp">
+        </div>
+       
+
+    
       </div>
           <div class="modal-footer ">
-        <button type="button" class="btn btn-warning btn-lg" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span>Créer</button>
+        <button type="button" class="btn btn-warning btn-lg" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span>ajouter</button>
       </div>
         </div>
     <!-- /.modal-content --> 
@@ -342,18 +254,42 @@
     <div class="modal-content">
           <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h4 class="modal-title custom_align" id="Heading">Edit Your Detail</h4>
+        <h4 class="modal-title custom_align" id="Heading">Editer ficher client</h4>
       </div>
           <div class="modal-body">
+            <div class="form-group">
+          <input class="form-control " type="text" placeholder="nom" name="nom">
+          </div>
+        <div class="form-group">
+          <input class="form-control " type="text" placeholder="prenom" name="prenom">
+        </div>
+        <div class="form-group">
+        <input class="form-control " type="date" placeholder="Date naissance" name="dateNaissance">
+        </div>
+         <div class="form-group">
+        <input class="form-control " type="email" placeholder="email" name="email">
+        </div>
+         <div class="form-group">
+        <input class="form-control " type="tel" placeholder="tel" name="tel">
+        </div>
+         <div class="form-group">
+        <input class="form-control " type="text" placeholder="Adresse" name="addresse">
+        </div>
+        <div class="form-group">
+        <input class="form-control " type="text" placeholder="Adresse sup" name="asup">
+        </div>
           <div class="form-group">
-        <input class="form-control " type="text" placeholder="Mohsin">
+        <input class="form-control " type="text" placeholder="cp" name="cp">
+        </div>
+          <div class="form-group">
+        <input class="form-control " type="text" placeholder="ville" name="ville">
+        </div>
+          <div class="form-group">
+        <input class="form-control " type="number" placeholder="type" name="type">
         </div>
         <div class="form-group">
-        
-        <input class="form-control " type="text" placeholder="Irshad">
+        <input class="form-control " type="password" placeholder="mot de passe" name="mdp">
         </div>
-        <div class="form-group">
-        <textarea rows="2" class="form-control" placeholder="CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan"></textarea>
     
         
         </div>
