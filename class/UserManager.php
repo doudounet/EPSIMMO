@@ -10,7 +10,8 @@ class UserManager
 
   public function add(usernnage $user)
   {
-    $q = $this->_db->prepare('INSERT INTO epsimmo SET nom = :nom, prenom = :prenom, dateNaiss = :dateNaiss, secret = :secret, motDePasse = :motDePasse, email = :email, tel = :tel, addresse = :addresse, asup = :asup, cp = :cp, ville = :ville');
+    $q = $this->_db->prepare('INSERT INTO epsimmo SET nom = :nom, prenom = :prenom, dateNaiss = :dateNaiss, secret = :secret, motDePasse = :motDePasse,
+                               email = :email, tel = :tel, addresse = :addresse, asup = :asup, cp = :cp, ville = :ville');
 
     $q->bindValue(':nom', $user->nom());
     $q->bindValue(':prenom', $user->prenom());
@@ -24,42 +25,43 @@ class UserManager
     $q->bindValue(':cp', $user->cp());
     $q->bindValue(':ville', $user->ville());
 
+/*
     $q->bindValue(':forceuser', $user->forceuser(), PDO::PARAM_INT);
     $q->bindValue(':degats', $user->degats(), PDO::PARAM_INT);
     $q->bindValue(':niveau', $user->niveau(), PDO::PARAM_INT);
     $q->bindValue(':experience', $user->experience(), PDO::PARAM_INT);
-
-      public $id;
-  public $nom;
-  public $prenom;
-  public $dateNaiss;
-  public $secret;
-  public $motDePasse;
-  public $email;
-  public $tel;
-  public $addresse;
-  public $asup;
-  public $cp;
-  public $ville;
-
+*/
     $q->execute();
   }
 
-  public function delete(usernnage $user)
+  // [OK] : suppression d'un utilisateur dans la BDD
+  public function delete(Client $user)
   {
-    $this->_db->exec('DELETE FROM usernnages WHERE id = '.$user->id());
+    $this->_db->exec('DELETE FROM client WHERE id = '.$user->id());
   }
 
-  public function get($id)
+  // [OK] : récup les données d'un utilisateur grace à son ID
+  public function getUser($id)
   {
     $id = (int) $id;
 
-    $q = $this->_db->query('SELECT id, nom, forceuser, degats, niveau, experience FROM usernnages WHERE id = '.$id);
+    $q = $this->_db->query('SELECT id, nom, prenom, dateNaiss, secret, motDePasse, email, tel, addresse, asup, cp, ville FROM client WHERE id = '.$id);
     $donnees = $q->fetch(PDO::FETCH_ASSOC);
 
     return new usernnage($donnees);
   }
 
+// [OK] : récup les données d'un utilisateur grace à son mail. Utile pour la récup de mot de passe
+  public function getMailOfUser($mail)
+  {
+
+    $q = $this->_db->query('SELECT * FROM client WHERE mail = '.$mail);
+    $donnees = $q->fetch(PDO::FETCH_ASSOC);
+
+    return new usernnage($donnees);
+  }
+
+  // [OK] : récup un tableau des utilisateur de toutes la BDD
   public function getList()
   {
     $users = array();
