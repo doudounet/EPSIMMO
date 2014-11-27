@@ -21,7 +21,7 @@
     <link href="css/plugins/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -93,16 +93,15 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Dashboard <small>Statistics Overview</small>
+                           Gestion<small> des clients</small>
                         </h1>
                         <ol class="breadcrumb">
-                            <li class="active">
-                                <i class="fa fa-dashboard"></i> Dashboard
+                          <li>
+                                <i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
                             </li>
-                           
-<p><button class="btn btn-warning btn-xs" data-title="create" data-toggle="modal" data-target="#create" data-placement="top" rel="tooltip">Ajouter une fiche client</button></p>
-                         
                         </ol>
+                        <p><button class="btn btn-warning btn-xs" data-title="create" data-toggle="modal" data-target="#create" data-placement="top" rel="tooltip">Ajouter une fiche client</button></p> 
+
                     </div>
                 </div>
             
