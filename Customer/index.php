@@ -134,15 +134,97 @@ else{
 
         <div id="pad-wrapper">
             <!-- statistics -->
-            <div class="row chart">
-                <div class="col-md-12">
-                    <h4 class="clearfix pull-left">
-                        Bienvenue                         
-                    </h4>
-                    
+           <div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <legend>Mr. Client:</legend>
+        </div>
+        <!-- panel preview -->
+        <div class="col-sm-5">
+            <h4>Ajouter des informations:</h4>
+            <div class="panel panel-default">
+                <div class="panel-body form-horizontal payment-form">
+                    <div class="form-group">
+                        <label for="concept" class="col-sm-3 control-label">Nom</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="concept" name="Nom">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="description" class="col-sm-3 control-label">Prénom</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="prenom" name="prenom">
+                        </div>
+                    </div> 
+                    <div class="form-group">
+                        <label for="amount" class="col-sm-3 control-label">Adresse</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="Adresse" name="Adresse">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount" class="col-sm-3 control-label">Ville</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="ville" name="ville">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount" class="col-sm-3 control-label">Email</label>
+                        <div class="col-sm-9">
+                            <input type="email" class="form-control" id="email" name="email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="date" class="col-sm-3 control-label">Date naissance</label>
+                        <div class="col-sm-9">
+                            <input type="date" class="form-control" id="date" name="date">
+                        </div>
+                    </div>   
+                    <div class="form-group">
+                        <div class="col-sm-12 text-right">
+                            <button type="button" class="btn btn-default preview-add-button">
+                                <span class="glyphicon glyphicon-plus"></span> Modifier
+                            </button>
+                        </div>
+                    </div>
                 </div>
-               
+            </div>            
+        </div> <!-- / panel preview -->
+        <div class="col-sm-7">
+            <h4>Preview:</h4>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="table-responsive">
+                        <table class="table preview-table">
+                            <thead>
+                                <tr>
+                                    <th>nom</th>
+                                    <th>Prénom</th>
+                                    <th>Adresse</th>
+                                    <th>Ville</th>
+                                    <th>Email</th>
+                                    <th>Date naissance</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody> <!-- preview content goes here-->
+                        </table>
+                    </div>                            
+                </div>
             </div>
+            <div class="row text-right">
+                <div class="col-xs-12">
+                    <h4>Total: <strong><span class="preview-total"></span></strong></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <hr style="border:1px dashed #dddddd;">
+                    <button type="button" class="btn btn-primary btn-block">Submit all and finish</button>
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>
         </div>
     </div>
 	<!-- scripts -->
