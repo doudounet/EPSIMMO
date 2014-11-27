@@ -44,8 +44,12 @@
 					<input type="text" class="form-control" placeholder="Email address" required=""  name="login" id="field1">
                         <input type="password" class="form-control" placeholder="Password" required="" name="pass" id="field2">
                        
-                        <input  class="btn-connect btn btn-warning" type="submit" value="Me connecter" /><br/>
-                       <button type="button" id="pwdforgotten" class="btn btn-info" onClick="divaffiche()" > Mot de passe oublié </button>
+                        <input  class="btn-connect btn btn-success" type="submit" value="Me connecter" /><br/>
+						<br/>
+                       <button type="button" id="pwdforgotten" class="btn btn-warning" onClick="divaffiche()" > Mot de passe oublié </button>
+					   <br/>
+					   <br/>
+					   <a href="signin.php" type="button" id="createEPC" class="btn btn-info"  > Créer un compte </a>
                       </form>
 					  
 					  

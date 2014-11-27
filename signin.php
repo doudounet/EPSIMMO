@@ -18,15 +18,16 @@
 				<div class="login-panel">
 					<h3 id="title">S'inscrire</h3>
 					<form action="" method="post">
-	
-					<input type="text" class="form-control" placeholder="Nom" required=""  name="nom" id="field1">
-                    <input type="text" class="form-control" placeholder="prénom" required="" name="prenom" id="field2">
-                    <input type="email" class="form-control" placeholder="adresse mail" required="" name="mail" id="field3">
+					
+					
+					<input type="text" class="form-control" placeholder="Nom" required=""  name="Nom" id="field1">
+                    <input type="text" class="form-control" placeholder="prénom" required="" name="Prenom" id="field2">
+                    <input type="email" class="form-control" placeholder="Adresse mail" required="" name="Mail" id="field3">
                     <br/>
-                    <input type="password" class="form-control" placeholder="mot de passe" required="" name="pass" id="field4">
-
-                       
-                    <input  class="btn-connect btn btn-warning" type="submit" value="S'inscrire" /><br/>
+                    <input type="password" class="form-control" placeholder="Mot de passe" required="" name="Pass" id="field4">
+	
+                    </br>
+                    <input  class="btn-connect btn btn-success" type="submit" value="S'inscrire" /><br/>
                  
                       </form>
 				</div>
